@@ -1,3 +1,5 @@
+![logo](https://rawgithub.com/wpilibsuite/branding/master/wpilib-horizontal.svg)
+
 # WPILib Branding Standards
 
 This repository contains WPILib's branding standards and guidelines.
