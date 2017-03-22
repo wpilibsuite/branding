@@ -11,7 +11,7 @@ sed -e '/sodipodi:docname/d' \
 
 sed -e '/<metadata/,/<\/metadata>/d' \
     -e '/<defs/,/>/d' \
-    -i wpilib.svg
+    -i svg/wpilib.svg
 
 sed -e '/sodipodi:docname/d' \
     -e '/inkscape:export/d' \
@@ -24,7 +24,7 @@ sed -e '/sodipodi:docname/d' \
 
 sed -e '/<metadata/,/<\/metadata>/d' \
     -e '/<defs/,/>/d' \
-    -i wpilib-horizontal.svg
+    -i svg/wpilib-horizontal.svg
 
 sed -e '/sodipodi:docname/d' \
     -e '/inkscape:export/d' \
@@ -37,4 +37,4 @@ sed -e '/sodipodi:docname/d' \
 
 sed -e '/<metadata/,/<\/metadata>/d' \
     -e '/<defs/,/>/d' \
-    -i wpilib-vertical.svg
+    -i svg/wpilib-vertical.svg
