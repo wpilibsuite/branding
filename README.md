@@ -1,4 +1,4 @@
-![logo](https://rawgithub.com/wpilibsuite/branding/master/wpilib-horizontal.svg)
+![logo](https://rawgithub.com/wpilibsuite/branding/master/svg/wpilib-horizontal.svg)
 
 # WPILib Branding Standards
 
