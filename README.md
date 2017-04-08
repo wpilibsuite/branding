@@ -1,4 +1,4 @@
-![logo](https://rawgithub.com/wpilibsuite/branding/master/svg/wpilib-horizontal.svg)
+![logo](https://rawgithub.com/wpilibsuite/branding/master/svg/wpilib-horiz-team.svg)
 
 # WPILib Branding Standards
 
@@ -48,3 +48,7 @@ The hexagon is sized to fit around the path the gear renderer generated. This pa
 The lettering uses DejaVu Sans with the bold attribute. The character used in the logo was converted to a path and is sized to fit within the gear path. This path is positioned such that the centroid of the "W"'s bounding trapezoid is centered within the image.
 
 The centroid measured from the longer base can be computed via `y = h / 3 * (2 * a + b) / (a + b)` where `a` is the length of the shorter base, `b` is the length of the longer base, and `h` is the height. For the current "W", `a = 278`, `b = 416`, and `h = 290`. The vertical offset needed to place the centroid of the "W" at the image center is given by `offset = y - h / 2`. That gives an offset of -9.6109, which is rounded down to -10.
+
+## Vertical Logo
+
+The distance between the bottom of the hexagon and the top of the first line of text is 1 inch. The distance between the bottom of the first line of text and the top of the second is 0.5 inches.
