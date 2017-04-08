@@ -7,7 +7,7 @@ sed -e '/sodipodi:docname/d' \
     -e '/<defs/,/>/d' \
     -e '/<sodipodi:namedview/,/>/d' \
     -i wpilib-edittable.svg
-# Also add ">" after svg tag's width attribute
+echo "wpilib-edittable.svg: also add '>' after svg tag's width attribute"
 
 sed -e '/<metadata/,/<\/metadata>/d' \
     -e '/<defs/,/>/d' \
@@ -19,12 +19,14 @@ sed -e '/sodipodi:docname/d' \
     -e '/<metadata/,/<\/metadata>/d' \
     -e '/<defs/,/>/d' \
     -e '/<sodipodi:namedview/,/>/d' \
-    -i wpilib-edittable-horizontal.svg
-# Also add ">" after svg tag's width attribute
+    -i wpilib-edittable-horiz-indiv.svg \
+       wpilib-edittable-horiz-team.svg
+echo "wpilib-edittable-horiz.svg: also add '>' after svg tag's width attribute"
 
 sed -e '/<metadata/,/<\/metadata>/d' \
     -e '/<defs/,/>/d' \
-    -i svg/wpilib-horizontal.svg
+    -i svg/wpilib-horiz-indiv.svg \
+       svg/wpilib-horiz-team.svg
 
 sed -e '/sodipodi:docname/d' \
     -e '/inkscape:export/d' \
@@ -32,9 +34,11 @@ sed -e '/sodipodi:docname/d' \
     -e '/<metadata/,/<\/metadata>/d' \
     -e '/<defs/,/>/d' \
     -e '/<sodipodi:namedview/,/>/d' \
-    -i wpilib-edittable-vertical.svg
-# Also add ">" after svg tag's width attribute
+    -i wpilib-edittable-vert-indiv.svg \
+       wpilib-edittable-vert-team.svg
+echo "wpilib-edittable-vert.svg: also add '>' after svg tag's width attribute"
 
 sed -e '/<metadata/,/<\/metadata>/d' \
     -e '/<defs/,/>/d' \
-    -i svg/wpilib-vertical.svg
+    -i svg/wpilib-vert-indiv.svg \
+       svg/wpilib-vert-team.svg
