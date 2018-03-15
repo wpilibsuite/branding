@@ -52,3 +52,9 @@ The centroid measured from the longer base can be computed via `y = h / 3 * (2 *
 ## Vertical Logo
 
 The distance between the bottom of the hexagon and the top of the first line of text is 1 inch. The distance between the bottom of the first line of text and the top of the second is 0.5 inches.
+
+## Save/Export Instructions
+
+To resize the canvas to the page content, first unselect all parts of the document. Then select "File > Document Properties...", expand the "Resize page to content..." section, and press the "Resize page to drawing or selection" button.
+
+After saving the Inkscape SVG, run `export.py` before committing. It will strip unnecessary metadata from the SVG and generate plain SVGs and PNG rasterizations automatically.

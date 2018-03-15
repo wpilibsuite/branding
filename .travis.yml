@@ -1,0 +1,15 @@
+sudo: true
+dist: trusty
+language: python
+python:
+  - 3.6
+before_install:
+  - sudo add-apt-repository ppa:inkscape.dev/stable -y
+  - sudo apt-get update -q || true
+  - sudo apt-get install inkscape -y
+script:
+  - inkscape --version
+  - python3 -m yapf --style google -i export.py
+  - ./export.py
+  # Ensure yapf and export.py made no changes
+  - git --no-pager diff --exit-code HEAD -- . ':!png'
