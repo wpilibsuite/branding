@@ -7,9 +7,6 @@ import sys
 
 
 def main():
-    # Tuple is (SVG file name, list of raster image heights)
-    png_rasters = [("svg/wpilib.svg", [16, 128])]
-
     svg = [
         f for f in os.listdir(".") if os.path.isfile(f) and f.endswith(".svg")
     ]
@@ -55,21 +52,10 @@ def main():
                 file.write(output.encode())
         print(" done.")
 
-    # Rasterize plain SVGs in various sizes
-    try:
-        os.mkdir("png/")
-    except Exception:
-        pass
-    for raster in png_rasters:
-        for size in raster[1]:
-            out_name = "png/" + os.path.splitext(os.path.basename(
-                raster[0]))[0] + "-" + str(size) + ".png"
-            print("Rasterizing " + raster[0] + " to " + out_name + "...")
-            sys.stdout.flush()
-            subprocess.run([
-                "inkscape", "-z", "--file=" + raster[0],
-                "--export-png=" + out_name, "--export-height=" + str(size)
-            ])
+    # Rasterize SVGs
+    args = ["./rasterize.py", "--svgs", "svg/wpilib.svg", "--raster-extension"]
+    subprocess.run(args + ["png", "--raster-sizes", "16", "128"])
+    subprocess.run(args + ["ico", "--raster-sizes", "256"])
 
 
 if __name__ == "__main__":

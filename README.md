@@ -57,4 +57,6 @@ The distance between the bottom of the hexagon and the top of the first line of 
 
 To resize the canvas to the page content, first unselect all parts of the document. Then select "File > Document Properties...", expand the "Resize page to content..." section, and press the "Resize page to drawing or selection" button.
 
-After saving the Inkscape SVG, run `export.py` before committing. It will strip unnecessary metadata from the SVG and generate plain SVGs and PNG rasterizations automatically.
+After saving the Inkscape SVG, run `export.py` before committing. It will strip unnecessary metadata from the SVG and generate plain SVGs and PNG rasterizations automatically. ImageMagick is required to generate ICO rasterizations.
+
+If rasterizations are needed beyond what `export.py` generates, invoke `rasterize.py` directly. `rasterize.py --help` lists possible arguments.

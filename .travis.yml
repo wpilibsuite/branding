@@ -6,10 +6,12 @@ python:
 before_install:
   - sudo add-apt-repository ppa:inkscape.dev/stable -y
   - sudo apt-get update -q || true
-  - sudo apt-get install inkscape -y
+  - sudo apt-get install inkscape imagemagick -y
 script:
   - inkscape --version
-  - python3 -m yapf --style google -i export.py
+  - python3 -m yapf --style google -i export.py rasterize.py
   - ./export.py
-  # Ensure yapf and export.py made no changes
-  - git --no-pager diff --exit-code HEAD -- . ':!png'
+  # Ensure yapf and export.py made no changes. Ignore .png files because Travis
+  # Inkscape output is different due to old Inkscape version. Ignore .ico files
+  # because Travis's Imagemagick is broken.
+  - git --no-pager diff --exit-code HEAD -- . ':!png' ':!ico'
