@@ -37,7 +37,7 @@ def rasterize(svg, raster_extension, raster_sizes):
         elif raster_extension == "ico":
             try:
                 subprocess.run([
-                    "convert", "-density",
+                    "convert", "-transparent", "white", "-density",
                     str(size), svg, "-define", "icon:auto-resize", out_name
                 ])
             except FileNotFoundError:
