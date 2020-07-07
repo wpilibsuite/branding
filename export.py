@@ -22,10 +22,10 @@ def main():
         subprocess.run(
             [
                 "inkscape",
-                "-z",
-                "--file=" + svg[i],
-                "--export-plain-svg=" + plain_svg[i],
+                "--export-type=svg",
+                "--export-filename=" + plain_svg[i],
                 "--export-text-to-path",
+                svg[i],
             ]
         )
         print(" done.")
@@ -33,8 +33,6 @@ def main():
     # Compile regexes
     rgxes = [
         re.compile('^\s+sodipodi:docname="((.|\n)*?")\n', re.M),
-        re.compile('^\s+inkscape:export="((.|\n)*?")\n', re.M),
-        re.compile('^\s+inkscape:version="((.|\n)*?")\n', re.M),
         re.compile("^\s+<metadata\s+((.|\n)*?</metadata>)\n", re.M),
         re.compile("^\s+<defs\s+((.|\n)*?/>)\n", re.M),
         re.compile("^\s+<sodipodi:namedview\s+((.|\n)*?/>)\n", re.M),
