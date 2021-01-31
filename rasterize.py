@@ -26,13 +26,13 @@ def rasterize(svg, raster_extension, raster_sizes):
         if raster_extension == "png":
             try:
                 subprocess.run([
-                    "inkscape", "-z", "--file=" + svg,
-                    "--export-png=" + out_name, "--export-height=" + str(size)
+                    "inkscape", "--export-type=png",
+                    "--export-filename=" + out_name,
+                    "--export-height=" + str(size), svg
                 ])
             except FileNotFoundError:
-                print(
-                    "Error: inkscape not found in PATH. Is it installed?",
-                    file=sys.stderr)
+                print("Error: inkscape not found in PATH. Is it installed?",
+                      file=sys.stderr)
                 sys.exit(1)
         elif raster_extension == "ico":
             try:
@@ -74,13 +74,12 @@ def main():
         help=
         "file extension of raster image output format (valid values are \"png\" and \"ico\")"
     )
-    parser.add_argument(
-        "--raster-sizes",
-        dest="raster_sizes",
-        type=str,
-        default="",
-        nargs="+",
-        help="list of heights for raster images")
+    parser.add_argument("--raster-sizes",
+                        dest="raster_sizes",
+                        type=str,
+                        default="",
+                        nargs="+",
+                        help="list of heights for raster images")
     args = parser.parse_args()
 
     # Exit early if there are no rasters to make
