@@ -35,10 +35,10 @@ def rasterize(svg, raster_extension, raster_sizes):
                 subprocess.run(
                     [
                         "inkscape",
-                        "-z",
-                        "--file=" + svg,
-                        "--export-png=" + out_name,
+                        "--export-type=png",
+                        "--export-filename=" + out_name,
                         "--export-height=" + str(size),
+                        svg,
                     ]
                 )
             except FileNotFoundError:
