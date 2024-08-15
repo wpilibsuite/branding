@@ -14,30 +14,25 @@ def rasterize(svg, raster_extension, raster_sizes):
     raster_extension -- file extension of raster image output format
     raster_sizes -- list of heights for raster images
     """
-    try:
-        os.mkdir(raster_extension + "/")
-    except Exception:
-        pass
+    os.makedirs(os.path.join("export", raster_extension), exist_ok=True)
     for size in raster_sizes:
-        out_name = (
-            raster_extension
-            + "/"
-            + os.path.splitext(os.path.basename(svg))[0]
-            + "-"
-            + str(size)
-            + "."
-            + raster_extension
+        out_name = os.path.join(
+            "export",
+            raster_extension,
+            f"{os.path.splitext(os.path.basename(svg))[0]}-{size}.{raster_extension}",
         )
-        print("Rasterizing " + svg + " to " + out_name + "...")
+
+        print(f"Rasterizing {svg} to {out_name}...", end="")
         sys.stdout.flush()
+
         if raster_extension == "png":
             try:
                 subprocess.run(
                     [
                         "inkscape",
                         "--export-type=png",
-                        "--export-filename=" + out_name,
-                        "--export-height=" + str(size),
+                        f"--export-filename={out_name}",
+                        f"--export-height={size}",
                         svg,
                     ]
                 )
@@ -69,8 +64,13 @@ def rasterize(svg, raster_extension, raster_sizes):
                 )
                 sys.exit(1)
         else:
-            print("Error: unknown raster file extension '{}'".format(raster_extension))
+            print(
+                f"Error: unknown raster file extension '{raster_extension}'",
+                file=sys.stderr,
+            )
             sys.exit(1)
+
+        print(" done.")
 
 
 def main():

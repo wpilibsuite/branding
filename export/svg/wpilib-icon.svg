@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
-   viewBox="0 0 1030.177 171.43084"
-   height="647.92755"
-   width="3893.5864">
+   viewBox="0 0 197.95128 197.95128"
+   height="748.16229"
+   width="748.16229"
+   sodipodi:docname="wpilib-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <g
-     transform="translate(-6.3457294,-91.747318)"
+     transform="translate(-6.3452988,-78.487104)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Hexagon"
@@ -41,7 +50,7 @@
      id="layer2"
      inkscape:label="Gear"
      style="display:inline"
-     transform="translate(-6.3457294,-6.4139226)">
+     transform="translate(-6.3452988,6.8462488)">
     <g
        id="g848"
        inkscape:label="Gear30"
@@ -57,8 +66,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Text"
-     transform="translate(-4.3060808e-4,13.260212)"
-     style="display:inline">
+     transform="translate(0,26.520426)">
     <g
        transform="translate(-6.3452965,-32.934384)"
        style="display:inline"
@@ -68,39 +76,6 @@
          d="M 50.350001,69.576383 H 69.360568 L 82.652509,125.47466 95.841412,69.576383 h 19.113608 l 13.1889,55.898277 13.29194,-55.898277 h 18.85601 l -18.13474,76.918097 h -22.8745 L 105.32094,88.020239 91.513803,146.49448 H 68.6393 Z"
          style="font-weight:bold;fill:#a9b0b7;fill-opacity:1;stroke-width:1.0990752px"
          id="path4489" />
-    </g>
-    <g
-       aria-label="WPILib Software Development"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.40000153px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="text3692"
-       transform="matrix(2.8559643,0,0,2.8559643,-420.30366,58.191905)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.89366913px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09264239px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="215.29842"
-         y="-23.878031"
-         id="text45"><tspan
-           sodipodi:role="line"
-           id="tspan43"
-           x="215.29842"
-           y="-16.009218"
-           style="stroke-width:0.09264239px" /></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.89366913px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#262626;fill-opacity:1;stroke:none;stroke-width:0.09264239px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="222.09952"
-         y="-4.3206849"
-         id="text49"><tspan
-           sodipodi:role="line"
-           x="222.09952"
-           y="-4.3206849"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.68100739px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';fill:#262626;fill-opacity:1;stroke-width:0.09264239px"
-           id="tspan872">WPILib</tspan><tspan
-           sodipodi:role="line"
-           x="222.09952"
-           y="29.030571"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.68100739px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';fill:#262626;fill-opacity:1;stroke-width:0.09264239px"
-           id="tspan878">Development Team</tspan></text>
     </g>
   </g>
 </svg>

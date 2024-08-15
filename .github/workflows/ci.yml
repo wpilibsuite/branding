@@ -7,12 +7,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4
-    - name: Install black
-      run: pip3 install black
-    - name: Run black
-      run: python3 -m black .
-    - name: Check output
-      run: git --no-pager diff --exit-code HEAD
+    - run: pip3 install black
+    - run: python3 -m black .
+    - run: git --no-pager diff --exit-code HEAD
 
   export:
     runs-on: ubuntu-22.04
@@ -23,11 +20,7 @@ jobs:
         sudo add-apt-repository ppa:inkscape.dev/stable
         sudo apt-get update -q
         sudo apt-get install inkscape imagemagick -y
-    - name: Run inkscape export
-      run: |
-        inkscape --version
-        ./export.py
-    - name: Check output
-      # Ignore .svg files because Ubuntu 22.04 inkscape has round-off issues and
-      # .ico files because Ubuntu 22.04 ImageMagick gives different results
-      run: git --no-pager diff --exit-code HEAD -- . ':!ico' ':!svg'
+    - run: ./export.py
+    # Ignore .svg files because Ubuntu 22.04 inkscape has round-off issues and
+    # .ico files because Ubuntu 22.04 ImageMagick gives different results
+    - run: git --no-pager diff --exit-code HEAD -- . ':!export/ico' ':!export/svg'
