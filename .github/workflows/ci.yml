@@ -26,11 +26,11 @@ jobs:
     - run: git --no-pager diff --exit-code HEAD -- . ':!export/ico' ':!export/svg'
 
   generate-icns:
-    runs-on: macos-latest
+    runs-on: macos-14
     needs: export
     steps:
     - uses: actions/checkout@v4
-    - name: generate ICNS
+    - name: Generate ICNS
       run: |
         mkdir -p wpilib-icon.iconset
         cp export/png/wpilib-icon-16.png   wpilib-icon.iconset/icon_16x16.png
