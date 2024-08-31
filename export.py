@@ -26,7 +26,7 @@ def main():
 
         print(" done.")
 
-    # PNG rasterizations
+    # PNG icon rasterizations
     subprocess.run(
         [
             "./rasterize.py",
@@ -42,6 +42,20 @@ def main():
             "256",
             "512",
             "1024",
+        ]
+    )
+
+    # PNG generic rasterizations
+    subprocess.run(
+        [
+            "./rasterize.py",
+            "--svgs",
+            "export/svg/wpilib-generic.svg",
+            "--raster-extension",
+            "png",
+            "--raster-sizes",
+            "75",
+            "128",
         ]
     )
 
