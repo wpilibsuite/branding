@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1024"
+   width="975"
    zoomAndPan="magnify"
-   viewBox="0 0 768 767.99999"
-   height="1024"
+   viewBox="0 0 731.25 731.24999"
+   height="975"
    preserveAspectRatio="xMidYMid"
    version="1.0"
    id="svg12"
@@ -96,18 +96,18 @@
     </mask>
   </defs>
   <rect
-     style="fill:#ffffff;fill-opacity:1;stroke-width:1.12438"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:1.11105"
      id="rect1"
-     width="748.46704"
-     height="731.6723"
-     x="12.430065"
-     y="14.205767"
-     rx="57.792507"
-     ry="54.687706" />
+     width="731.25"
+     height="731.25"
+     x="1.0091657e-06"
+     y="-9.0173359e-08"
+     rx="56.4631"
+     ry="54.656143" />
   <g
      clip-path="url(#5a66cfa81f)"
      id="g12"
-     transform="translate(-2.6635837,-5.3271676)">
+     transform="translate(-15.981509,-23.97224)">
     <g
        clip-path="url(#6237d3f83a)"
        id="g11">
